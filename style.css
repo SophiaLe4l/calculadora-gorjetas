@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arima:wght@100..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+:root{
+font-size: 62.5%;
+    
+    --jagged-ice: #C5E4E7;
+    --white: #FFF;
+    --greyish-turquiose: #5E7A7D;
+    --squeeze: #F3F9FA;
+    --sherpa-blue: #00474B;
+    --topaz: #26C2AE;
+    --beetle-green: #547878;
+}
+
+body {
+    font-size: 1.6rem;
+    background: var(--jagged-ice);
+}
+
+header {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background: var(--white);
+    padding: 3.2rem 2.4rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+}
+
+.info {
+    padding-inline: .8rem;
+    div {
+        margin-bottom: 3.2rem;
+    }
+
+strong {
+    color: var(--greyish-turquiose);
+    display: block;
+    margin-bottom: .6rem;
+}
+
+.input-box {
+background: var(--squeeze);
+padding: .6rem 1.8rem;
+display: flex;
+align-items: center;
+border-radius: .5rem;
+
+input {
+    font-size: 2.4rem;
+    border: none;
+    background: transparent;
+    text-align: right;
+    width: 100%;
+    font-weight: 700;
+    outline: none;
+    color: var(--sherpa-blue);
+}
+
+input::placeholder {
+    color: var(--sherpa-blue);
+    opacity: 0.35;
+}
+}
+
+.input-box:has(input:focus) {
+    outline: 2px solid var(--topaz);
+}
+
+.tip div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    margin-top: .8rem;
+
+    button {
+        font-size: 2.4rem;
+        color: var(--white);
+        font-weight: 700;
+        border: none;
+        border-radius: .5rem;
+        padding-inline: .6rem;
+        padding-block: .6rem;
+        background: var(--sherpa-blue);
+    }
+    input {
+        width: 100%;
+        font-size: 2.4rem;
+        text-align: center;
+        font-weight: 700;
+        border: none;
+        color: var(--sherpa-blue);
+        background: var(--squeeze);
+        border-radius: .5rem;
+    }
+
+    input::placeholder {
+        color: var(--beetle-green);
+
+    }
+
+    input:focus {
+        outline: 2px solid var(--topaz);
+    }
+}
+}
+
+.results {
+    background: var(--sherpa-blue);
+    border-radius: 1.5rem;
+}
