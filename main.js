@@ -23,6 +23,10 @@ function receiveNumberOfPeople() {
 
 function receiveTipPercentegeValue(value){
 buttonSelected = document.querySelector("")
+
+tipPercentegeValue = value / 100
+
+buttonSelected = document.querySelector("")
 }
 
 function calculate(){
