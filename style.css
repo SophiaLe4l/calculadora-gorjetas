@@ -87,7 +87,7 @@ input::placeholder {
     gap: 1.6rem;
     margin-top: .8rem;
 
-    button {
+    button, number-of-people {
         font-size: 2.4rem;
         color: var(--white);
         font-weight: 700;
@@ -127,14 +127,14 @@ input::placeholder {
     background: var(--sherpa-blue);
     border-radius: 1.5rem;
     padding: 2.4rem;
-
+    
     .amount,
-    .total {
+    .total  {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 2.5rem;
-
+    
         p {
         color: var(--white);
         font-weight: 700;
@@ -158,7 +158,7 @@ input::placeholder {
         background: var(--topaz);
         border-radius: .5rem;
         text-transform: uppercase;
-        font-size: .2rem;
+        font-size: 1rem;
         color: var(--sherpa-blue);
         font-weight: 700;
     }
@@ -202,10 +202,11 @@ input::-webkit-inner-spin-button {
             .amount p,
             .total p {
                 font-size: 1.6rem;
+                
             }
 
             .amount strong
-            .total strnog {
+            .total strong {
                 font-size: 4.8rem;
             }
             
