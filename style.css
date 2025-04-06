@@ -87,16 +87,17 @@ input::placeholder {
     gap: 1.6rem;
     margin-top: .8rem;
 
-    button, number-of-people {
-        font-size: 2.4rem;
-        color: var(--white);
-        font-weight: 700;
-        border: none;
-        border-radius: .5rem;
-        padding-inline: .6rem;
-        padding-block: .6rem;
-        background: var(--sherpa-blue);
-    }
+button {   
+    font-size: 2.4rem;
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    border-radius: .5rem;
+    padding-inline: .6rem;
+    padding-block: .6rem;
+    background: var(--sherpa-blue);
+}
+    
 
     .button-selected {
         background: var(--topaz);
